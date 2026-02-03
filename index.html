@@ -1,0 +1,42 @@
+HTML
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <style>
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            font-family: sans-serif;
+        }
+        img { width: 100%; border-radius: 10px; }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <img src="product.jpg" alt="المنتج">
+    <h2>اسم المنتج المميز</h2>
+    <p>هذا الوصف يشرح فوائد المنتج ومميزاته التقنية بشكل مختصر وجذاب.</p>
+    <button id="pay-btn">ادفع الآن</button>
+</div>
+
+<script>
+    document.getElementById('pay-btn').onclick = () => alert('جاري التحويل للدفع...');
+</script>
+
+</body>
+</html>
+
